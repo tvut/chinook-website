@@ -9,13 +9,14 @@ body,p {
 }
 
 h1{
-    font-size:10vw;
+    font-size:80pt;
+    margin-left:-3px;
 }
 h2{
-    font-size:6vw;
+    font-size:60px;
 }
 h3{
-    font-size:4vw;
+    font-size:40px;
 }
 .accent{
     color:#F50057
