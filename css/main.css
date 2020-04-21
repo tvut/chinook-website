@@ -20,9 +20,20 @@ h2{
     font-size:60px;
 }
 h3{
-    font-size:40px;
+    font-size:36px;
 }
-
+section {
+    padding: 10vh 30px;
+}
+@media screen and (max-width: 768px){
+    h3{
+        font-size:28px;
+    }
+    section{
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+}
 .accent{
     color:var(--accent);
 }
@@ -96,6 +107,49 @@ h3{
     }
 }
 
+footer{
+    background-color:#2e2e2e;
+    text-transform: uppercase;
+    text-align: center;
+    color:#CCC;
+    line-height:20px;
+    letter-spacing: 15px;
+    padding:30px;
+}
+footer img{
+    max-width:250px;
+    opacity: .6;
+    margin-top: 15px;
+    width:65%;
+}
+.copyright{
+    text-align: center;
+    padding: 30px;
+    background-color:#171717;
+    color:#5c5c5c;
+    width:100vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.appgoals{
+    text-align: center;
+    background-color:white;
+}
+.appgoals p{
+    line-height:28px;
+    color:#929292
+}
+.appgoals img{
+    width:90%;
+    padding:20px;
+}
+.blurb{
+    max-width:850px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
 /*@media screen and (max-aspect-ratio: 1/2) {*/
 /*    .overflowprotect{*/
 /*        height:80vh;*/
