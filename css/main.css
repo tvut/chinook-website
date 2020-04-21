@@ -63,11 +63,11 @@ h3{
 
 @media screen and (min-aspect-ratio: 1/1) {
     .gradient{
-        background: #FF416C;
+        background: #FF7A72;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(45deg, #FF4B2B, #FF416C);
+        background: -webkit-linear-gradient(45.34deg, #FBB13C 5.66%, #FF7A72 48.62%, #FF7A72 94.35%);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(45deg, #FF4B2B, #FF416C);
+        background: linear-gradient(45.34deg, #FBB13C 5.66%, #FF7A72 48.62%, #FF7A72 94.35%);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     .phone{
