@@ -1,9 +1,13 @@
+:root {
+    --accent: #F50057;
+}
+
 /* Fonts */
 h1,h2,h3,h4,h5,h6,h7,h8,h9{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-body,p {
+body {
     color:#2e2e2e;
     font-family: 'Open Sans', sans-serif;
 }
@@ -18,8 +22,12 @@ h2{
 h3{
     font-size:40px;
 }
+
 .accent{
-    color:#F50057
+    color:var(--accent);
+}
+.w{
+    color:white;
 }
 
 .flex {
@@ -32,23 +40,64 @@ h3{
     width: 100vw;
     height:100vh;
 }
-.gradient{
-    background: #FF416C;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, #FF4B2B, #FF416C);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45deg, #FF4B2B, #FF416C);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 .phone{
-    width:70vh;
-    left: 50vw;
-    top:25vh;
-    position: absolute;
+    width:90%;
+}
+.half h1{
+    font-size:15vw;
+    color:var(--accent)
+}
+.half p{
+    font-size:7vw;
+}
+.halfpadded{
+    padding: 15vw;
+    padding-bottom: 5vw;
 }
 
-@media screen and (max-aspect-ratio: 3/2) {
+.overflowprotect{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+    .gradient{
+        background: #FF416C;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(45deg, #FF4B2B, #FF416C);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(45deg, #FF4B2B, #FF416C);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
     .phone{
-        width:45vw;
+        width:75%;
+        margin-top: 48vh;
+    }
+
+    .half{
+        width:50vw;
+        height:100vh;
+        overflow: hidden;
+        color:white;
+    }
+    .right{
+        position: absolute;top:0;right:0
+    }
+    .half h1{
+        font-size:7vw;
+        color: white;
+    }
+    .half p{
+        font-size:3vw;
+    }
+    .half-padded{
+        padding: 5vw;
     }
 }
+
+/*@media screen and (max-aspect-ratio: 1/2) {*/
+/*    .overflowprotect{*/
+/*        height:80vh;*/
+/*    }*/
+/*}*/
