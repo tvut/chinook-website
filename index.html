@@ -30,7 +30,7 @@
             var scroll_pos = 0;
             $(document).scroll(function () {
                 scroll_pos = $(this).scrollTop();
-                if ($(window).width() > 768) {
+                if (($(window).width()/$(window).height())>1) {
                     if(scroll_pos>$(window).height()){
                         $('.modify').css({
                             "position": "absolute"
