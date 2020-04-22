@@ -1,5 +1,5 @@
 :root {
-    --accent: #F50057;
+    --accent: #FBB13C;
 }
 
 /* Fonts */
@@ -57,6 +57,9 @@ section {
     align-items: center;
     justify-content: center;
 }
+.center{
+    text-align: center;
+}
 .flex-left {
     display: flex;
     align-items: center;
@@ -86,6 +89,16 @@ section {
 .overflowprotect{
     height: 100vh;
     overflow-y: hidden;
+}
+
+.gradient2{
+    min-height:50vh;
+    background: #FF7A72;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45.34deg, #FBB13C 5.66%, #FF7A72 48.62%, #FF7A72 94.35%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45.34deg, #FBB13C 5.66%, #FF7A72 48.62%, #FF7A72 94.35%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
@@ -220,8 +233,28 @@ article p{
     width:100vw;
     z-index: -2;
 }
+.button{
+    color:#2e2e2e;
+    text-decoration: none;
+    border: 3px solid #2e2e2e;
+    padding: 15px 25px;
+    display: inline-block;
+    margin-top:10px;
+    transition: .5s all;
+    border-radius: 30px;
+}
+.button h4{
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.button:hover{
+    color:var(--accent);
+    text-decoration: none;
+    background-color: #2e2e2e;
+}
 /*@media screen and (max-aspect-ratio: 1/2) {*/
 /*    .overflowprotect{*/
 /*        height:80vh;*/
 /*    }*/
 /*}*/
+
