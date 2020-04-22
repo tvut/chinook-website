@@ -99,6 +99,7 @@ section {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(45.34deg, #FBB13C 5.66%, #FF7A72 48.62%, #FF7A72 94.35%);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 30px 30px -30px #171717;
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
