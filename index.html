@@ -28,9 +28,12 @@
         $(document).ready(function () {
             /* Shrinks Menu When Scrolled Past 1/2 the page */
             var scroll_pos = 0;
-            $(document).scroll(function () {
-                scroll_pos = $(this).scrollTop();
-                if (($(window).width()/$(window).height())>1) {
+            var vertical = false;
+            if(($(window).width()/$(window).height())<1)vertical=true;
+            $(window).resize(function () {
+                if(($(window).width()/$(window).height())<1)vertical=true;
+                else vertical=false;
+                if (!vertical) {
                     if(scroll_pos>$(window).height()){
                         $('.modify').css({
                             "position": "absolute"
@@ -46,8 +49,23 @@
                     });
                 }
             });
-            $(window).resize(function () {
-                $(".modify").css('position', '');
+            $(document).scroll(function () {
+                scroll_pos = $(this).scrollTop();
+                if (!vertical) {
+                    if(scroll_pos>$(window).height()){
+                        $('.modify').css({
+                            "position": "absolute"
+                        });
+                    } else {
+                        $('.modify').css({
+                            "position": "fixed"
+                        });
+                    }
+                } else{
+                    $('.modify').css({
+                        "position": "relative"
+                    });
+                }
             });
         });
     </script>

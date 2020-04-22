@@ -12,6 +12,11 @@ body,h7 {
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    width:100vw;
+    overflow-x:hidden;
+}
+
 h7{
     text-transform: uppercase;
     color:#b3b3b3;
