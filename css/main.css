@@ -3,13 +3,24 @@
 }
 
 /* Fonts */
-h1,h2,h3,h4,h5,h6,h7,h8,h9{
+h1,h2,h3,h4,h5,h6,h8,h9{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-body {
+body,h7 {
     color:#2e2e2e;
     font-family: 'Open Sans', sans-serif;
+}
+
+h7{
+    text-transform: uppercase;
+    color:#b3b3b3;
+    text-align: center;
+    width:100%;
+    display: block;
+    padding-bottom: 40px;
+    font-size:24px;
+    letter-spacing: 8px;
 }
 
 h1{
@@ -98,7 +109,8 @@ section {
         color:white;
     }
     header .right{
-        position: absolute;top:0;right:0
+        top:0;right:0;
+        z-index: -1;
     }
     .half h1{
         font-size:7vw;
@@ -112,7 +124,7 @@ section {
     }
 }
 
-header .right, .b{
+header .right{
     background: white;
 }
 
@@ -162,6 +174,7 @@ footer img{
 article img{
     max-height:1000px;
     height:60vh;
+    filter: drop-shadow(0px 0px 8px #969696);
 }
 .right{
     text-align: center;
@@ -190,6 +203,9 @@ article img{
 .a {
     background-color:#f5f5f5
 }
+.b{
+    background-color:#f8f8f8;
+}
 .flex-left h3{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -202,7 +218,7 @@ article p{
     bottom: 0;
     left:0;
     width:100vw;
-    z-index: -1;
+    z-index: -2;
 }
 /*@media screen and (max-aspect-ratio: 1/2) {*/
 /*    .overflowprotect{*/

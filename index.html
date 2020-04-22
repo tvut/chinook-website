@@ -24,7 +24,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="css/main.css">
-
+    <script>
+        $(document).ready(function () {
+            /* Shrinks Menu When Scrolled Past 1/2 the page */
+            var scroll_pos = 0;
+            $(document).scroll(function () {
+                scroll_pos = $(this).scrollTop();
+                if ($(window).width() > 768) {
+                    if(scroll_pos>$(window).height()){
+                        $('.modify').css({
+                            "position": "absolute"
+                        });
+                    } else {
+                        $('.modify').css({
+                            "position": "fixed"
+                        });
+                    }
+                } else{
+                    $('.modify').css({
+                        "position": "relative"
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -35,7 +58,7 @@
             <p>When you can't bring yourself to do work</p>
         </div>
     </div>
-    <div class="half flex right">
+    <div class="half flex right modify" style="position: absolute">
         <img class="phone animated slideInUp" src="images/workingwithfriends.png"/>
     </div>
 </header>
@@ -64,6 +87,7 @@
 <article>
 <section class="a">
     <div class="container">
+        <h7>How it works</h7>
         <div class="row">
             <div class="col-sm right">
                 <img src="images/addingfriends.png"/>
